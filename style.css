@@ -85,7 +85,7 @@ body {
   margin-right: 35px;
 }
 
-.header-2-menu li:hover a {
+.header-2-menu li:hover > a {
   color: #fc6a20;
 }
 
@@ -100,6 +100,63 @@ body {
 .angle-down {
   width: 10px;
   margin-left: 3px;
+}
+
+.submenu {
+  align-self: flex-start;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 452px;
+  font-weight: 400;
+  font-size: 14px;
+  display: none;
+}
+
+.submenu-1 {
+  transform: translateY(100px);
+}
+
+.submenu-2 {
+  transform: translate(-158px, 100px);
+}
+
+.submenu-3 {
+  transform: translate(-254px, 100px);
+}
+
+.submenu div {
+  display: flex;
+  background-color: #f2f4fa;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.submenu a {
+  color: #0d1a34;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  margin-right: 0px;
+}
+
+.submenu a:hover {
+  color: #fc6a20;
+}
+
+.header-2-menu li:hover > .submenu {
+  display: flex;
+}
+
+.header-2-menu ul li {
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 .request {

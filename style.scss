@@ -92,6 +92,7 @@ body {
 
 .header-2-menu ul {
 display: flex;
+// background-color: gold;
 }
 
 .header-2-menu a {
@@ -100,11 +101,15 @@ display: flex;
     font-size: 14px;
     color: #0d1a34;
     margin-right: 35px;
+
+    // background-color: blueviolet;
+
 } 
+
 
 /////////  hover  /////////
 
-.header-2-menu li:hover a{
+.header-2-menu li:hover > a {
     color: #fc6a20;
 } 
 
@@ -115,12 +120,80 @@ display: flex;
 .header-2-menu li:hover img{
     transform: rotate(-180deg);
 } 
-//////////////////////////////
 
 .angle-down {
     width: 10px;
     margin-left: 3px;
 }
+//////////////////////////////
+
+
+// ///////////////////////////////  submenu  ///////////////////
+
+.submenu {
+    align-self: flex-start;
+    // background-color: red;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 452px;
+    font-weight: 400;
+    font-size: 14px;
+    display: none;
+}
+
+.submenu-1 {
+    transform: translateY(100px);
+}
+.submenu-2 {
+    transform: translate(-158px, 100px);
+}
+.submenu-3 {
+    transform: translate(-254px, 100px);
+}
+
+.submenu div {
+    display: flex;
+    // background-color: green;
+    background-color: #f2f4fa;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.submenu a {
+    color: #0d1a34;;
+    // background-color: aqua;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    margin-right: 0px;
+}
+
+/////////  hover  header-2 submenu /////////
+
+.submenu a:hover {
+    color: #fc6a20;
+} 
+
+.header-2-menu li:hover > .submenu {
+// background-color: blue;
+display: flex;
+} 
+
+.header-2-menu ul li{
+    // background-color: greenyellow;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+// ////////////////////////////////////////////
+
 
 .request {
     // background-color: red;
@@ -582,3 +655,8 @@ background-color: #fc6a20;
     align-self: center;
     background-color: #f2f4fa;
 }
+
+
+// ///////////////////
+// ///////////////////
+// ///////////////////
